@@ -1,0 +1,29 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class MyClass {
+    public static void main(String[] args) {
+        System.out.println("MyClass:main():Programm Started ");
+        solveSquare (4,5,6);
+        solveLinear(0,-24);
+        System.out.println("MyClass:main():Programm done ");
+       
+    }
+
+    public static void solveSquare (int a,int b, int c) {
+        System.out.println("MyClass:solveSquare():"
+        +"solving equation  "+a+"x^2+"+b+"x+"+c+"=0 ");
+    }
+    public static void solveLinear (int b, int c) {
+        System.out.println("MyClass:solveLinear():" 
+        +"solving equation "+b+"x+"+c+"=0 ");
+        if (b==0) {
+            System.out.println("MyClass:solveLinear():" 
+        +"root= does not exist  ");
+        } else{
+            int x= -c/b;
+            System.out.println("MyClass:solveLinear():" 
+        +"root= "+x+" ");
+        } 
+    }
+}
